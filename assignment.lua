@@ -30,12 +30,14 @@ function assignment.reverseArray(t)
         reversed[i] = t[#t-#reversed]
     end
 
-    return t
+    return reversed
 end
 
 local function main()
-    assignment.arraySum({1,2,3}) -- should print 6 (1+2+3)
-    assignment.arrayProduct({1,2,3}) -- should print 6 (1*2*3)
+    print(assignment.arraySum({1,2,3})) -- should print 6 (1+2+3)
+    print(assignment.arrayProduct({1,2,3})) -- should print 6 (1*2*3)
+    local reversed = assignment.reverseArray({3, 2, 1})
+    print("Reversed: " .. table.concat(reversed, ", ")) -- should print Reversed: 1, 2, 3
 end
 
 -- call the main function
