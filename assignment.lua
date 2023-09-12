@@ -12,4 +12,15 @@ function assignment.arraySum(t)
     return sum
 end
 
+function assignment.arrayProduct(t)
+    local product = 1
+    
+    for i = 1, #t do
+        local value = t[i]
+        product = product * value
+    end
+
+    return product
+end
+
 return assignment
