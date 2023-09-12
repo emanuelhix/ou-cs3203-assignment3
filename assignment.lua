@@ -23,4 +23,12 @@ function assignment.arrayProduct(t)
     return product
 end
 
+local function main()
+    assignment.arraySum({1,2,3}) -- should print 6 (1+2+3)
+    assignment.arrayProduct({1,2,3}) -- should print 6 (1*2*3)
+end
+
+-- call the main function
+main()
+
 return assignment
