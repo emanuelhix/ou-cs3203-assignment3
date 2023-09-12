@@ -23,9 +23,21 @@ function assignment.arrayProduct(t)
     return product
 end
 
+function assignment.reverseArray(t)
+    local reversed = {}
+
+    for i = 1, #t do
+        reversed[i] = t[#t-#reversed]
+    end
+
+    return reversed
+end
+
 local function main()
-    assignment.arraySum({1,2,3}) -- should print 6 (1+2+3)
-    assignment.arrayProduct({1,2,3}) -- should print 6 (1*2*3)
+    print(assignment.arraySum({1,2,3})) -- should print 6 (1+2+3)
+    print(assignment.arrayProduct({1,2,3})) -- should print 6 (1*2*3)
+    local reversed = assignment.reverseArray({3, 2, 1})
+    print("Reversed: " .. table.concat(reversed, ", ")) -- should print Reversed: 1, 2, 3
 end
 
 -- call the main function
