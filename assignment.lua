@@ -23,6 +23,16 @@ function assignment.arrayProduct(t)
     return product
 end
 
+function assignment.reverseArray(t)
+    local reversed = {}
+
+    for i = 1, #t do
+        reversed[i] = t[#t-#reversed]
+    end
+
+    return t
+end
+
 local function main()
     assignment.arraySum({1,2,3}) -- should print 6 (1+2+3)
     assignment.arrayProduct({1,2,3}) -- should print 6 (1*2*3)
