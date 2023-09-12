@@ -1,6 +1,5 @@
 local assignment = {}
 
--- returns the sum of all numbers within an array portion of a table
 function assignment.arraySum(t)
     local sum = 0
     
