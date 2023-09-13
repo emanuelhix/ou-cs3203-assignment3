@@ -23,6 +23,8 @@ function assignment.arrayProduct(t)
     return product
 end
 
+-- lua doesn't support an automatic main function, so we just write one ourselves.
+-- this runs when the module is passed to a require call.
 local function main()
     assignment.arraySum({1,2,3}) -- should print 6 (1+2+3)
     assignment.arrayProduct({1,2,3}) -- should print 6 (1*2*3)
