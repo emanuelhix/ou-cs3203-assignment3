@@ -22,7 +22,6 @@ function assignment.arrayProduct(t)
     return product
 end
 
-<<<<<<< HEAD
 function assignment.reverseArray(t)
     local reversed = {}
 
@@ -33,10 +32,8 @@ function assignment.reverseArray(t)
     return reversed
 end
 
-=======
 -- lua doesn't support an automatic main function, so we just write one ourselves.
 -- this runs when the module is passed to a require call.
->>>>>>> f6db8af (Added some helpful comments)
 local function main()
     print(assignment.arraySum({1,2,3})) -- should print 6 (1+2+3)
     print(assignment.arrayProduct({1,2,3})) -- should print 6 (1*2*3)
